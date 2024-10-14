@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo añadido -->
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo Fauna es Vida" class="nav-logo"> <!-- Asegúrate de que la ruta sea correcta -->
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Nuestra Galería</h2>
+        <div id="gallery-container" class="gallery-images">
+            <!-- Aquí se insertarán dinámicamente las imágenes -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../images/facebook-icon.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="../images/twitter-icon.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../images/instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+            <div class="company-info">
+                <p><strong>Dirección:</strong> Ronda del Poniente 33, Tres Cantos, Madrid</p>
+                <p><strong>Teléfono:</strong> +34 924 568 956</p>
+            </div>
+            <div class="legal-info">
+                <p><a href="aviso_legal.html">Aviso Legal</a></p>
+            </div>
+        </div>
+        <p>Todos los derechos reservados &copy; 2024</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        const images = [
+            { "url": "../images/delfin rosa.jpg", "title": "Delfin Rosa" },
+            { "url": "../images/panda.jpg", "title": "Panda" },
+            { "url": "../images/panda rojo.jpeg", "title": "Panda Rojo" },
+            { "url": "../images/lince.jpg", "title": "Lince" },
+            { "url": "../images/guacamayo militar.jpg", "title": "Guacamayo Militar" },
+            { "url": "../images/pinguino.jpg", "title": "Pingüino" },
+            { "url": "../images/tigres.jpg", "title": "Tigre" },
+            { "url": "../images/tiburon martillo.jpg", "title": "Tiburón Martillo" },
+            { "url": "../images/Leopardo de las nieves.jpg", "title": "Leopardo de las Nieves" },
+            { "url": "../images/tucan.jpg", "title": "Tucan" }
+        ];
+
+        function loadGallery() {
+            const galleryContainer = document.getElementById('gallery-container');
+            images.forEach(image => {
+                const imageElement = `
+                    <a href="${image.url}" data-lightbox="gallery" data-title="${image.title}">
+                        <img src="${image.url}" alt="${image.title}" class="gallery-img">
+                    </a>
+                `;
+                galleryContainer.innerHTML += imageElement;
+            });
+        }
+
+        window.onload = loadGallery;
+    </script>
+</body>
+</html>

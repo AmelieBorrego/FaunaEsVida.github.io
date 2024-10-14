@@ -1,0 +1,22 @@
+{
+    "noticias": [
+        {
+            "titulo": "Estos son los animales en peligro de extinción en 2024",
+            "descripcion": "En el planeta existen más de 7,7 millones de especies de animales y más del 20% está en peligro de extinción. Algunos de los animales más extraños de nuestro planeta caminan en la cuerda floja de la extinción. El fotógrafo Tim Flach ha pasado más de dos años inmortalizando en fotografías algunos de ellos, los más emblemáticos, curiosos y llamativos. (Héctor Rodríguez Editor y periodista especializado en ciencia y naturaleza)",
+            "fecha": "03 de septiembre de 2024, 08:42",
+            "url": "https://www.nationalgeographic.com.es/mundo-animal/animales-peligro-extincion_12536"
+        },
+        {
+            "titulo": "Parques Nacionales: cómo cuidarlos y mantenerlos",
+            "descripcion": "En España hay más de 420.000 hectáreas de superficie natural protegida, lo que supone uno de nuestros mayores atractivos. Aquí os contamos tos son los principales consejos para disfrutarlos y ayudar a mantenerlos.",
+            "fecha": "Actualizado el 18/03/2022",
+            "url": "https://www.fundacionaquae.org/wiki/consejos-cuidar-los-parques-nacionales/"
+        },
+        {
+            "titulo": "Reservas marinas: islas de vida en océanos amenazados",
+            "descripcion": "Documentamos la explosión de biodiversidad en una reserva marina. Esta figura de protección genera tanta biomasa, que las zonas aledañas sin protección también se contagian de vida. La ciencia muestra que las reservas marinas funcionan y benefician a la naturaleza y a las comunidades locales.",
+            "fecha": "24-06-2024",
+            "url": "https://es.greenpeace.org/es/noticias/reservas-marinas-islas-de-vida-en-oceanos-amenazados/"
+        }
+    ]
+}
